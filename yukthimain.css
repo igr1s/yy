@@ -1,0 +1,660 @@
+@font-face {
+    font-family: 'changuttan';
+    /* Name your font family */
+    src: url('assets/Changeling_Neo/Changeling\ Neo\ Regular.otf');
+    /* Locate the .ttf file within your directory*/
+}
+
+*{
+    padding: 0;
+    margin: 0%;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'changuttan';
+    text-transform: uppercase;
+    overflow-x: hidden;
+        
+
+}
+#page1{
+    position: relative;
+    filter: blur(30px);
+    overflow: hidden;
+    transition: all 3s ease;
+}
+    
+#centerpiece{
+        height: 100vh;
+}
+#sidebar {
+    position: fixed; /* Keeps it in place while scrolling */
+    left: 0; /* Aligns it to the left */
+    top: 50%; /* Centers it vertically */
+    transform: translateY(-50%); /* Ensures perfect centering */
+    width: 150px; /* Adjust based on design */
+    background: transparent; /* Keep background if necessary */
+    z-index: 1000; /* Keeps it above other content */
+    padding: 10px;
+}
+
+/* #sidebarimg1{
+        scale: 1;
+} */
+/* #sidebarimg2{
+        scale: 0.9;
+}
+#sidebarimg3{
+    scale:1.5;
+}
+#sidebarimg4{
+    scale: 0.95;
+} */
+    
+li,a{
+        text-decoration: none;
+        list-style-type: none;
+        margin-bottom: 10px;
+        font-size: 21px;
+        color: grey;
+}
+    
+#list1{
+        height: auto;
+        transform: translate(0,43%);
+}
+    
+#yukthilogo{
+        
+    position: absolute;
+    top: 0%;
+    left: 25%;
+    scale:0.2;
+    transition: all 3s ease;
+}
+    
+#yukthirobot{
+        position: absolute;
+        left: 42%;
+        top: 60%;
+        height: 40%;
+        transition: all 3s ease;
+        filter: saturate(200%);
+}
+    
+#yukthibigtitle{
+        position: absolute;
+        left: 10%;
+        top: 12%;
+        z-index: -1;
+        transform: scale(0.7);
+        transition: all 3s ease;
+}
+#stistbigtitle{
+        position: absolute;
+        top: 8%;
+        left: 10%;
+}
+
+#second{
+    position: absolute;
+    top: 33%;
+    right: 6%;
+}
+#Home1:hover, #Hackathon1:hover, #Workshops1:hover, #Competitions1:hover,
+#Home2:hover, #Hackathon2:hover, #Workshops2:hover, #Competitions2:hover,
+#Home3:hover, #Hackathon3:hover, #Workshops3:hover, #Competitions3:hover,
+#Home4:hover, #Hackathon4:hover, #Workshops4:hover, #Competitions4:hover,
+#Hackathon2, #Workshops4 {
+    font-size: 25px;
+    color: black;
+    transition: all 1s ease;
+}
+/* page2 */
+#page2{
+    position: relative;
+    overflow: hidden;
+    background-image: url('assets/Hacakthon.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 109vh;
+}
+#sidebar2{
+    display: flex;
+    position: absolute;
+    left: 0;
+    top: 2%;
+    z-index: 100;
+}
+#list2{
+    height: auto;
+    transform: translate(0,43%);
+}
+#hacktitle{
+    position: absolute;
+    top: 30%;
+    right: 35%;
+    width: 50%;
+}
+
+#hacktext{
+    position: absolute;
+    top: 40%;
+    left: 15%;
+    width: 40%;
+    font-size: 20px;
+    font-family: 'changuttan';
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    line-height: 1.2;
+}
+#hackbutton{
+    position: absolute;
+    height: 75px;
+    width: 175px;
+    top: 70%;
+    left: 15%;
+    border: none;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-size: 22px;
+    border-radius: 0px 30px 0px 30px;
+    text-align: center;
+    font-family: 'changuttan';
+}
+#hackbutton:hover{
+    background-color: rgba(255, 255, 255);
+    color: black;
+    transition: all 0.5s ease;
+}
+/* card section */
+#hackcontainer{
+    position: absolute;
+    top: 40%;
+    left: 73%;
+}
+#hacksub{
+    filter: invert(1);
+    scale: 1.5;
+}
+#hackback2{
+    position: absolute;
+    top: 8%;
+    right: 4%;
+    filter: saturate(0%);
+    scale: 0.95;
+    transition: all 1s ease;
+}
+#yudham{
+    position: absolute;
+    height: 600px;
+    top: -100px;
+    left: -50px;
+    filter: saturate(200%);
+    transition: all 0.2s;
+    filter: drop-shadow(0px 0px 5px);
+}
+
+#hackcard{
+    width: 310px;
+    position: relative;
+}
+
+#hackrobot{
+    position: absolute;
+    top: 42%;
+    left: 5%;
+    width: 80%;
+    height: 70%;
+    transition: all 0.5s ease;
+    transform-origin: bottom; /* Set the transform origin to the top */
+    transform: scale(1.5); 
+    filter: saturate(200%);
+}
+
+#hackcard:hover #hackrobot{
+    transform: scale(1.8,2.2);
+    opacity: 1;
+}
+
+#hackcard:hover #hackback2{
+    filter: saturate(100%);
+}
+
+h1{
+    color: rgb(0, 0, 0);
+    text-align: left;
+    width: 100%;
+    margin-left: -16%;
+    margin-top: 15%;
+    font-size: 50px;
+}
+/* page3 */
+#page3{
+    position: relative;
+    overflow: hidden;
+   
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 150vh;
+}
+#sidebar3{
+    display: flex;
+    position: absolute;
+    left: 0;
+    top: 19.5%;
+    z-index: 100;
+}
+#list3{
+    position: fixed; /* Keeps it in place while scrolling */
+    left: 20px; /* Aligns it to the left */
+    top: 50%; /* Centers it vertically */
+    transform: translateY(-50%); /* Ensures perfect centering */
+    width: 150px; /* Adjust based on design */
+    background: transparent; /* Keep background if necessary */
+    z-index: 1000; /* Keeps it above other content */
+    padding: 10px;
+}
+
+/* card section */
+#compcenter{
+    position: relative;
+    height: 100vh;
+    margin-left:50px ;
+}
+#compcontainer1{
+    position: absolute;
+    top: 50%;
+    left: 15%;
+}
+#compcontainer2{
+    position: absolute;
+    top: 50%;
+    left: 35%;
+}
+#compcontainer3{
+    position: absolute;
+    top: 50%;
+    left: 55%;
+}
+#compcontainer4{
+    position: absolute;
+    top: 50%;
+    left: 75%;
+}
+#compcontainer5{
+    position: absolute;
+    top: 100%;
+    left: 25%;
+}
+#compcontainer6{
+    position: absolute;
+    top: 100%;
+    left: 45%;
+}
+#compcontainer7{
+    position: absolute;
+    top: 100%;
+    left: 65%;
+}
+#compsub{
+    filter: invert(1);
+}
+#compback2{
+    position: absolute;
+    top: 8%;
+    left: 4%;
+    filter: saturate(0%);
+    transition: all 0.5s ease;
+}
+#compcard{
+    width: 310px;
+    position: relative;
+}
+
+#comprobot{
+    position: absolute;
+    top: 21.2%;
+    left: 5%;
+    width: 80%;
+    height: 70%;
+    transition: all 0.5s ease;
+    transform-origin: bottom; /* Set the transform origin to the top */
+    transform: scale(0.9); 
+    filter: saturate(200%);
+}
+
+#compcard:hover #comprobot{
+    transform: scale(1.2,1.4);
+    opacity: 1;
+}
+
+#compcard:hover #compback2{
+    filter: saturate(100%);
+}
+
+h1{
+    color: rgb(0, 0, 0);
+    text-align: left;
+    width: 100%;
+    margin-left: -5%;
+    margin-top: 1%;
+    font-size: 30px;
+    text-align: center;
+}
+
+/* page4 */
+#page4{
+    position: relative;
+    overflow: hidden;
+    background-image: url('assets/Workshops.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 168vh;
+    background-position: -500px;
+    
+}
+
+#sidebar4{
+    display: flex;
+    position: absolute;
+    left: 0;
+    top: 0%;
+    z-index: 100;
+}
+#list4{
+    height: auto;
+    transform: translate(0,43%);
+}
+/* card section */
+#workcenter{
+    position: relative;
+    height: 100vh;
+    margin-left:50px ;
+}
+#yudham2{
+    height: 300px;
+}
+#workcontainer1{
+    position:absolute;
+    top: 35%;
+    left: 12%;
+}
+#workcontainer2{
+    position: absolute;
+    top: 35%;
+    left: 28%;
+}
+#workcontainer3{
+    position: absolute;
+    top: 35%;
+    left: 44%;
+}
+#workcontainer4{
+    position: absolute;
+    top: 35%;
+    left: 60%;
+}
+#workcontainer5{
+    position: absolute;
+    top: 35%;
+    left: 77%;
+}
+#workcontainer6{
+    position: absolute;
+    top: 75%;
+    left:12%;
+}
+#workcontainer7{
+    position: absolute;
+    top: 75%;
+    left: 28%;
+}
+#workcontainer8{
+    position: absolute;
+    top: 75%;
+    left:44%;
+}
+#workcontainer9{
+    position: absolute;
+    top: 75%;
+    left: 60%;
+}
+#workcontainer10{
+    position: absolute;
+    top: 75%;
+    left: 77%;
+}
+#workcontainer11{
+    position: absolute;
+    top: 115%;
+    left: 28%;
+}
+
+#workcontainer12{
+    position: absolute;
+    top: 115%;
+    left: 44%;
+}
+
+#workcontainer13{
+    position: absolute;
+    top: 115%;
+    left: 60%;
+}
+#workcontainer14{
+    position: absolute;
+    top: 115%;
+    left: 77%;
+}
+#workcontainer15{
+    position: absolute;
+    top: 115%;
+    left:12%;
+}
+
+/* #worksub{
+    filter: invert(1);
+}
+#workback2{
+    position: absolute;
+    top: 8%;
+    left: 4%;
+    filter: saturate(0%);
+    transition: all 0.5s ease;
+} */
+#workcard{
+    width: 310px;
+    position: relative;
+}
+/* 
+#workrobot{
+    position: absolute;
+    top: 21.2%;
+    left: 5%;
+    width: 80%;
+    height: 70%;
+    transition: all 0.5s ease;
+    transform-origin: bottom; 
+    transform: scale(0.9); 
+    filter: saturate(200%);
+} */
+
+/* #workcard:hover #workrobot{
+    transform: scale(1.2,1.4);
+    opacity: 1;
+} */
+
+/* #workcard:hover #workback2{
+    filter: saturate(100%);
+} */
+
+h1{
+    color: rgb(0, 0, 0);
+    text-align: left;
+    width: 100%;
+    margin-left: -10%;
+    margin-top: 1%;
+    font-size: 30px;
+    text-align: center;
+}
+h4{
+    color: rgb(0, 0, 0);
+    width: 100%;
+    margin-left: -10%;
+    margin-top: 1%;
+    font-size: 23px;
+    text-align: center;
+}
+#titletext{
+    position: absolute;
+    top: 25%;
+    left: 2%;
+    font-size: 80px;
+}
+@media (min-width: 1024px) {
+    #hackcontainer, #workcontainer1, #workcontainer2, #workcontainer3, #workcontainer4, #workcontainer5, #workcontainer6, #workcontainer7, #workcontainer8, #workcontainer9, #workcontainer10, #workcontainer11, #workcontainer12, #workcontainer13, #workcontainer14, #workcontainer15, #compcontainer1, #compcontainer2, #compcontainer3, #compcontainer4, #compcontainer5, #compcontainer6, #compcontainer7 {
+        max-width: 30%;
+    }
+}
+
+
+#secondpage {
+    position: relative;
+    width: 100vw;
+    /* Changed height to min-height to allow content expansion */
+    /* 220vh if 24 sponsors and 120vh if 12 sponsors excluding title sponsor  */
+    min-height: 220vh;
+    background-color: #0F1321;
+    padding-bottom: 11px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* Removed overflow: hidden to show all content */
+}
+
+.tsc {
+    width: 100vw;
+    margin: 2.5%;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    /* Properly center content */
+    translate: -5%;
+
+}
+
+.ts {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgb(0, 0, 0);
+    transition: transform 0.3s ease;
+    width: 30%; /* Increased width */
+    background-color: rgba(255, 255, 255, 0.486);
+    aspect-ratio: 1 / 1;
+    margin: 0 auto;
+}
+
+.gallery-title {
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0 auto;
+    padding: 2rem 0;
+    font-size: clamp(30px, 8vw, 80px);
+}
+
+.gallery-grid {
+  
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 200px;
+    /* Added padding for better spacing */
+    margin-bottom: 5%;
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 1); */
+    filter: drop-shadow(0 0 5px rgb(255, 255, 255));
+    transition: transform 0.3s ease;
+    /* background-color: rgba(255, 255, 255, 0.486); */
+}
+
+/* Fixed hover selector structure */
+.gallery-item:hover,
+.ts:hover {
+    transform: translateY(-5px);
+}
+
+
+.gallery-item img {
+    position: relative;
+    width:280px;
+    height: 350px;
+    object-fit: contain;
+    /* filter: drop-shadow(0 0 rgb(255, 255, 255)); */
+    display: block;
+    /* transition: transform 0.3s ease; */
+}
+
+.ts img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+
+}
+
+/* Fixed hover selector for images */
+/* .gallery-item:hover img,
+.ts:hover img {
+    transform: scale(1.05);
+} */
+
+.image-caption {
+    padding: 15px;
+    background-color: white;
+    text-align: center;
+    color: #666;
+}
+
+@media (max-width: 768px) {
+    .gallery-grid {
+        gap: 15px;
+        padding: 10px;
+    }
+
+    .ts {
+        max-width: 90vw;
+        /* Better mobile width */
+        width: 100%;
+    }
+
+    .gallery-item,
+    .ts {
+        width: 100%;
+        aspect-ratio: 1 / 1;
+    }
+}
+#workshopcontainer{
+    background-image: url('assets/Workshops.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+
+}
+#competitions{
+    background-image: url('assets/Competitions.png');
+    margin-top: 200px;
+    padding-top: 60px ;
+    position: relative;
+}

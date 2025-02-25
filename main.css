@@ -1,0 +1,76 @@
+@font-face {
+    font-family: 'changuttan';
+    /* Name your font family */
+    src: url('assets/Changeling_Neo/Changeling\ Neo\ Bold.otf');
+    /* Locate the .ttf file within your directory*/
+}
+
+
+
+/* main.css */
+body {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    font-family: 'changuttan';
+    text-transform: uppercase;
+}
+
+#firsth1 {
+    text-align: center;
+    font-size: clamp(20px, 4vw, 30px); /* Responsive font size */
+    width: 100%;
+    -webkit-text-stroke: black 0.4px;
+    color: white;
+    transition: all 0.5s ease;
+}
+
+.mainbody {
+    display: flex;
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#bluewhite {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1000;
+    transition: 1.5s ease;
+}
+
+#elementsleft,
+#elementsmiddle,
+#elementsright {
+    position: absolute;
+    top: 12%;
+    filter: drop-shadow(0 0 0.75rem black);
+}
+
+#elementsleft {
+    left: 0;
+}
+
+#elementsmiddle {
+    left: -10%;
+}
+
+#elementsright {
+    right: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+    #firsth1 {
+        font-size: clamp(18px, 3.5vw, 25px);
+    }
+}
+
+@media (max-width: 768px) {
+    #firsth1 {
+        font-size: clamp(16px, 3vw, 20px);
+    }
+}
